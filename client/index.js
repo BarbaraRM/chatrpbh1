@@ -24,15 +24,14 @@ mensaje.addEventListener('keypress',()=>{
 
 socket.on('mensaje_servidor',(data)=>{
     acciones.innerHTML=''
-    conversacion.innerHTML+=`<p><strong>${data.usuario}</strong> ${data.mensaje}</p>`
+    conversacion.innerHTML+=`<p><strong>${data.usuario}</strong>:  ${data.mensaje}</p>`
 })
 
 socket.on('mensaje_servidor1',(data)=>{
     acciones.innerHTML=''
-    conversacion.innerHTML+=`<p>${data.usuario} se ha conectado</p>`
+    conversacion.innerHTML+=`<p><i><span style=\"color: green;\">${data.usuario} se ha unido al chat.</span></i></p>`
 })
 
 socket.on('escribiendo',(usuario)=>{
-    acciones.innerHTML=`<p><strong>${usuario} </strong>escribiendo...</p>`
+    acciones.innerHTML=`<p><i><span style=\"color: red;\">${usuario} esta escribiendo...</span></i></p>`
 })
-
