@@ -20,10 +20,11 @@ h1 {
 }
 #chat-window{
     border-bottom:1px solid #e9e9e9;
-    height: 500px;
+    min-height: 500px;
 }
 #conversacion p{
     color:black;
+    height: 15px;
 }
 
 
