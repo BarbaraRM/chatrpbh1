@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Chat Room</title>
+</head>
+<body>
+    <header>
+        <h1>Mini Chat Room</h1>
+    </header>
+    <div id="chat-contenedor">
+        <div id="superior">
+            
+          <input id="usuario" type="text" placeholder="Nombre del usuario" />
+          <button id="join" type="button" >Unirme al chat</button>
+        </div>
+        <div id="chat-window">
+            <div id="conversacion"></div>
+            <div id="acciones"></div>
+        </div>
+        
+        <input type="text" id="mensaje" placeholder="Escribe un mensaje">
+        <button id="enviar">Enviar</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
